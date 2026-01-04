@@ -48,7 +48,7 @@ class EventController extends Controller
 
         $event = Event::create($request->all());
 
-        $event = Event::create($request->all());
+        // $event = Event::create($request->all());
 
         if ($request->has('categories')) {
             // 2. Lampirkan relasi kategori

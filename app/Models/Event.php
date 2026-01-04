@@ -28,5 +28,10 @@ class Event extends Model
         return $this->belongsToMany(Category::class, 'event_category', 'event_id', 'category_id');
     }
 
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
 
 }
