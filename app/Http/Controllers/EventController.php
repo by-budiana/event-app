@@ -31,7 +31,7 @@ class EventController extends Controller
         if ($request->filled('venue_id')){
             $query->where('venue_id', $request->venue_id);
         }
-        $events = $query->get();
+        $events = $query->paginate(10);
         return response()->json($events);
     }
     public function store(Request $request)

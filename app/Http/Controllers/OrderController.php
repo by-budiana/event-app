@@ -8,9 +8,16 @@ use App\Models\Order;
 
 class OrderController extends Controller
 {
-    public function index()
+    public function index(request $request)
     {
-        return response()->json(Order::all(), 200);
+        $order = Order::query();
+        if ($request->filled('search')) {
+            $search = $request->input('search');
+            $order->where('status_pembayaran', 'like', "%$search%")
+                  ->orWhere('email_pemesan', 'like', "%$search%")
+                  ->orWhere('nomor_telepon', 'like', "%$search%");
+        }
+        return response()->json($order->paginate(10), 200);
     }
 
     public function store(Request $request)
