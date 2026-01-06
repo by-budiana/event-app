@@ -24,7 +24,7 @@ this app build with concept **modern, structured, and esay to use**, so that hal
 
 ---
 
-## Alur Penggunaan Aplikasi
+## Application flow usage
 
 1. Admin create **Venue** will use event location.
 2. Admin create **category Event**.
@@ -33,7 +33,7 @@ this app build with concept **modern, structured, and esay to use**, so that hal
 
 ---
 
-## ⚙️ Cara Menjalankan Aplikasi
+## ⚙️ How to run the application
 
 ### :one: Clone Repository
  ```bash
