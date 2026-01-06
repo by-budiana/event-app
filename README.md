@@ -5,7 +5,7 @@ this app build with concept **modern, structured, and esay to use**, so that hal
 
 ---
 
-## Fitur Utama
+## features
 
 - 📅 **Management Event**  
   create, update, and manage data event centrally.
@@ -44,7 +44,7 @@ this app build with concept **modern, structured, and esay to use**, so that hal
 ```
 composer install
 ```
-### :three: create database and migrate 
+### :three: Create database and migrate 
 ```
 create new database event_db
 adjust .env with .env.xample
@@ -54,11 +54,11 @@ and php artisan key:generate
 ```
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
-### :five: migrate database
+### :five: Migrate database
 ```
 php artisan migrate
 ```
-### :six: run
+### :six: Run
 ```
 php artisan serve
 ```
